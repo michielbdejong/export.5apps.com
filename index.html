@@ -90,7 +90,7 @@
       api_key: 'cybbbiarf4dkrce'
     });
     remoteStorage.displayWidget();
-    remoteStorage.access.claim('*', 'rw');
+    remoteStorage.access.claim('*', 'r');
     function expandOne(path) {
       remoteStorage.scope('/').getListing(path, 1000000).then(function(listing) {
         var i, id, str = '<ul>', parentId;
